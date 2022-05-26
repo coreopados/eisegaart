@@ -1,0 +1,19 @@
+﻿{"frames": {
+
+"CachedBmp_8":
+{
+	"frame": {"x":0,"y":0,"w":16,"h":12},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":12},
+	"sourceSize": {"w":16,"h":12}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "21.0.2.37893",
+	"image": "home canvas_atlas_2.png",
+	"format": "undefined",
+	"size": {"w":16,"h":16},
+	"scale": "1"
+}
+}
