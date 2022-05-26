@@ -1137,7 +1137,8 @@ footer:before {
 .slider-wrap {
   max-width: 695px;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+overflow:hidden}
 
 .slider-wrap .swiper-button-next, .slider-wrap .swiper-button-prev {
   top: unset;
