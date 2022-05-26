@@ -1,0 +1,24 @@
+.agenda-page{
+    .jardin-title{
+        margin-bottom: 50px;
+        .s-title{
+            position: relative;
+            img{
+                position: absolute;
+                max-width:110px;
+                left: -175px;
+                bottom: -43px;  z-index: -1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .agenda-page{
+        padding-top: 60px;
+    }
+
+    .agenda-page .jardin-title .s-title img{
+        left: -110px;
+    }
+}

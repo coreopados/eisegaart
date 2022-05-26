@@ -1,0 +1,316 @@
+.wrapper-height{
+    height: calc(100vh - 187px - 115px);
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+.resources-page{
+
+    margin-top: 0;
+    .jardin-title{
+        // margin-bottom: 160px;
+        .s-title{
+            position: relative;
+            img{
+                position: absolute;
+                max-width: 95px;
+                left: -130px;
+                bottom: -43px;  z-index: -1;
+            }
+        }
+    }
+}
+
+.section-links{
+    margin-top: auto;
+    margin-bottom: auto;
+    .wrap-links{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(100px, 218px));
+        grid-gap: 125px;
+        justify-content: center;
+        // margin-bottom: 177px;
+        a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .img-wrap{
+                height: 125px;
+                img{
+                    max-width: 100%;
+                    height: 100%;
+                }
+            }
+            .link-text{
+                font-size: 44px;
+                font-weight: bold;
+            }
+
+        }
+
+        a.organistionnel-link{
+            .link-text{
+                color:#B5832B;
+            }
+        }
+        a.pratique-link{
+            .link-text{
+                color:#546E45;
+            }
+        }
+        a.social-link{
+            .link-text{
+                color:#C9694B;
+            }
+        }
+        a.resau-link{
+            .link-text{
+                color:#6B6691;
+            }
+        }
+    }
+}
+
+
+.resources-single{
+    .container{
+        position: relative;
+        .content-container{
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .buttons-wrap{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            top: 0;
+            left: 30px;
+            width: calc(100% - 60px);
+            z-index: 1;
+            .wrap-links{
+                display: grid;
+                grid-template-columns: repeat(4, 70px);
+    
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .img-wrap{
+                        height: 40px;
+                        margin-bottom: 5px;
+                        img{
+                            max-width: 100%;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                    .link-text{
+                        
+                    }
+                }
+                a.organistionnel-link{
+                    .link-text{
+                        color:#B5832B;
+                    }
+                }
+                a.pratique-link{
+                    .link-text{
+                        color:#546E45;
+                    }
+                }
+                a.social-link{
+                    .link-text{
+                        color:#C9694B;
+                    }
+                }
+                a.resau-link{
+                    .link-text{
+                        color:#6B6691;
+                    }
+                }
+
+            }
+        }
+        .jardin-title{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+        
+            img{
+                max-width:100%;
+                height: 100px;
+                margin-bottom: 20px;    margin-top: 20px;
+            }
+        }
+
+        .resources-info__comment{
+            display: grid;
+            grid-template-columns: 360px 1fr;
+
+            .comment-label{
+                font-size: 48px;
+                font-weight: bold;font-family: 'Amatic SC';
+                margin-top: 10px;
+            }
+
+            .comment-link{
+                padding-left: 30px;
+                border-left: 2px solid $brown-color;
+                padding-top: 20px;
+                padding-bottom: 50px;
+                a{
+                    font-family: 'Lucida Sans Std';
+                    font-size: 16px;
+                }
+                p{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .resources-info__comment:not(.resources-info__comment--first) .comment-link{
+            padding-bottom: 20px;
+        }
+        .resources-info__img{
+            margin-left: auto;
+            margin-bottom: 50px;
+            // margin-top: 30px;
+            margin-top: 50px;
+        }
+    }
+ 
+}
+
+.social-res{
+    .resources-info__img{
+        max-width: 320px;
+    }
+}
+
+.organistionnel-res{
+    .resources-info__img{
+        max-width: 190px;
+    }
+}
+.pratique-res{
+    .resources-info__img{
+        max-width: 250px;
+    }
+}
+
+.reseau-res{
+    .resources-info__img{
+        max-width: 220px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .section-links .wrap-links{
+        grid-gap: 50px;
+    }
+}
+@media screen and (max-width: 991px){
+
+    .wrapper-height{
+        height: unset;
+    }
+
+
+    .section-links .wrap-links{
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 60px;
+    }
+    .resources-page .jardin-title{
+        margin-bottom: 70px;
+    }
+
+    .resources-single .container .buttons-wrap{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+    .resources-single .container .jardin-title{
+        margin-bottom: 50px;
+    }
+
+    .resources-single .container .resources-info__comment{
+        grid-template-columns: 260px 1fr;
+    }
+}
+@media screen and (max-width: 768px){
+    .section-more-jardin.resources-page{
+        margin-top: 40px;
+    }
+    .resources-single .container .resources-info__comment{
+        grid-template-columns: 1fr;
+    }
+    .resources-single .container .resources-info__comment .comment-link{
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    .resources-single .container .back-link img{width: 60px;margin-bottom: 40px;}
+    .resources-single .container .buttons-wrap .wrap-links{
+        margin-bottom: 40px;
+    }
+
+    .resources-single .container .resources-info__comment .comment-label{
+        font-size: 40px;
+        margin-top: 0;
+    }
+    .resources-single .container .jardin-title{
+        margin-bottom: 45px;
+        h1.s-title{
+            font-size: 50px;
+        }
+    }
+    .resources-single .container .resources-info__comment .comment-link p:last-of-type{
+        margin-bottom: 0;
+    }
+    .resources-single .container .resources-info__comment.resources-info__comment--first .comment-link {
+        padding-bottom: 45px;
+        margin-bottom: 45px;
+        border-bottom: 2px solid $brown-color;
+    }
+}
+@media screen and (max-width: 576px){
+
+    .resources-page .jardin-title .s-title{
+        font-size: 62px;
+    }
+    .resources-page .jardin-title .s-title img{
+        left: -70px;
+    }
+
+
+    .resources-single .container .buttons-wrap{
+flex-direction: column;
+    }
+
+    .section-more-jardin.resources-single{
+margin-top: 0;
+    }
+
+
+
+}
+
+@media screen and (max-width: 480px){
+    .section-links .wrap-links{
+        grid-template-columns:  1fr;
+        grid-gap: 100px;
+    }
+
+}
+
+@media screen and (max-height: 680px) and (min-width: 576px){
+    .resources-page{
+        margin-top: -50px;
+    }
+}

@@ -1,0 +1,103 @@
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+html{
+    overflow-x:hidden;
+}
+html.hidden{
+    overflow-y:hidden;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Lucida Sans Std';
+    color:$brown-color;
+
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    min-height: 100vh;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1260px;
+    padding: 0 30px;
+}
+.inner-container{
+    // max-width: 550px;
+    margin: 0 auto;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s;
+    color:$brown-color;
+}
+
+a:hover{
+    color:$green-color;
+    transition: 0.2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,a,li{
+     font-family: 'Amatic SC';;
+}
+
+p{
+    font-size: 14px;
+    font-family: 'Lucida Sans Std';
+    color:$brown-color;
+    margin-bottom: 20px;
+}
+h1.s-title,
+h2.s-title,
+h3.s-title{
+    color:$green-color;
+}
+h1.s-title{
+    font-size: 72px;  
+    text-align: center;
+}
+h2.s-title{
+   
+}
+h3.s-title{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+button{
+
+}
+
+
+@media screen and (max-width: 768px){
+    h1.s-title{
+        font-size: 62px;
+        line-height: 52px;
+    }
+}
